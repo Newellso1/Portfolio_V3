@@ -13,7 +13,7 @@ html {
 }
 
 body {
-   background-image: linear-gradient(to right bottom, #1d1d1d, #232323, #2a2929, #303030, #373636);
+   background-image: linear-gradient(to right bottom, #161616, #2e2a2a, #2d5334, #303030, #373636);
    height: 100vh;
 }
 
@@ -88,16 +88,16 @@ p {
 .project {
     margin: 10px;
     width: 350px;
-    border: 4px solid #23232385;
+    border: 4px solid #0e0d0d85;
     border-radius: 7px;
     box-shadow: 5px 5px 20px#1d1d1d;
     padding: 10px;
-    transition: border 200ms ease-in-out, border-radius 250ms ease-in-out;
+    transition: border 500ms ease-in-out, border-radius 500ms ease-in-out;
 }
 
 .project:hover {
-    border: 4px solid #232323;
-    border-radius: 12px;
+    border: 4px solid #999999;
+    border-radius: 10px;
 }
 
 .project p {
