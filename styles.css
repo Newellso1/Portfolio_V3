@@ -6,6 +6,7 @@
     font-weight: 400;
     text-transform: uppercase;
     /* border: 1px solid white; */
+    color: #00000099;
 }
 
 html {
@@ -13,7 +14,7 @@ html {
 }
 
 body {
-   background-image: linear-gradient(to right bottom, #161616, #2e2a2a, #2d5334, #303030, #373636);
+   background-image: linear-gradient(to right bottom, #161616, #2e2a2a, #2d5334, #2e2a2a,#161616);
    height: 100vh;
 }
 
@@ -92,12 +93,32 @@ p {
     border-radius: 7px;
     box-shadow: 5px 5px 20px#1d1d1d;
     padding: 10px;
-    transition: border 500ms ease-in-out, border-radius 500ms ease-in-out;
+    transition: border 600ms ease-in-out, border-radius 500ms ease-in-out;
 }
 
 .project:hover {
     border: 4px solid #999999;
     border-radius: 10px;
+}
+
+.project:hover h2 {
+    color: #111111;
+}
+
+.project:hover p {
+    color: #111111;
+}
+
+.project:hover a {
+    color:#999999;
+}
+
+.project p, h2, a {
+    transition: color 500ms ease-in-out;
+}
+
+.project a {
+    color: #99999999;
 }
 
 .project p {
@@ -106,12 +127,36 @@ p {
     line-height: 1.25em;
 }
 
+
+
 /* Skills */
+
+.skills ol {
+    max-width: 700px;
+    padding: 30px;
+    font-size: 1.15em;
+    list-style: none;
+}
+
+.skills ol>li {
+    margin-bottom: 20px;
+}
+
+.listTitle {
+    font-size: 1.15em;    
+}
+
+ul li {
+    list-style-type: "- ";
+}
 @media screen and (max-width: 750px) {
     .about h1 {
         place-self: flex-start;
     }
     .projects h1 {
+        place-self: flex-start;
+    }
+    .skills h1 {
         place-self: flex-start;
     }
 }
