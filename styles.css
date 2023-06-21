@@ -14,15 +14,15 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to right bottom, #161616, #2e2a2a, #2d5334, #2e2a2a, #161616);
+    background-image: linear-gradient(to right bottom, #1f1e1e, #3a3535, #2d5334, #2e2a2a, #161616);
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
 }
 
-/* .content::-webkit-scrollbar {
+.content::-webkit-scrollbar {
     display: none;
-} */
+}
 
 .content {
     overflow: scroll;
