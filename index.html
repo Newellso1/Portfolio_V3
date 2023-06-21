@@ -19,12 +19,12 @@
 <body>
     <div class="content">
 
-        <div class="page hero">
+        <div id="page1" class="page hero">
             <h1>I<br>AM<br>SAM</h1>
             <p>Memorial Mason & Aspiring Web Developer</p>
         </div>
 
-        <div class="page about">
+        <div id="page2" class="page about">
             <h1>about me:</h1>
             <p>For the past 14 years, I have been working in the memorial masonry industry where I have honed my
                 attention to detail and craftsmanship through to creating meaningful tributes for those who have lost
@@ -34,7 +34,7 @@
                 will hone the skills that I have already developed</p>
         </div>
 
-        <div class="page projects">
+        <div id="page3" class="page projects">
             <h1>Projects:</h1>
             <p>I have created several projects that showcase my knowledge of HTML, CSS and .JS.
                 I've included the relevant links in the descriptions but feel free to have a nosey round my <a
@@ -73,8 +73,8 @@
             </div>
         </div>
 
-        <div class="page skills">
-            <h1>Skills / Hobbies</h1>
+        <div id="page4" class="page skills">
+            <h1>Skills:</h1>
             <ol>
                 <li><span class="listTitle">Web Development</span>
                     <ul>
@@ -112,8 +112,24 @@
 
         </div>
 
-        <div class="page">
+        <div id="page5" class="page contact">
+            <h1>Contact:</h1>
+            <p>If you like what you see and would like to find a bit more out about where I currently am in journey into
+                web Development then free free to get in touch</p>
+            <div class="formcarry-container">
+                <form action="form-process.php" method="POST" class="formcarry-form">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="fullName" required />
 
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="message">Your Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10">
+                    </textarea>
+                    <button type="submit">Get in touch</button>
+                </form>
+            </div>
         </div>
 
     </div>

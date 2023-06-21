@@ -14,15 +14,15 @@ html {
 }
 
 body {
-   background-image: linear-gradient(to right bottom, #161616, #2e2a2a, #2d5334, #2e2a2a,#161616);
-   height: 100vh;
-   width: 100vw;
-   overflow-x: hidden;
+    background-image: linear-gradient(to right bottom, #161616, #2e2a2a, #2d5334, #2e2a2a, #161616);
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
-.content::-webkit-scrollbar {
+/* .content::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .content {
     overflow: scroll;
@@ -81,9 +81,17 @@ p {
 }
 
 .projects a {
+    color: #99999999;
+}
+
+.projects a:hover {
     color: #999999;
 }
-            
+
+.project a:hover {
+    color: #d8d6d6;
+}
+
 .projectContainer {
     display: flex;
     justify-content: center;
@@ -115,16 +123,19 @@ p {
     color: #111111;
 }
 
-.project:hover a {
-    color:#999999;
-}
-
-.project p, h2, a {
+.project p,
+h2,
+a {
     transition: color 500ms ease-in-out;
 }
 
 .project a {
     color: #99999999;
+}
+
+.project a:hover {
+    color: #d8d6d6;
+
 }
 
 .project p {
@@ -142,6 +153,7 @@ p {
     padding: 10px 30px 30px 30px;
     font-size: 1.15em;
     list-style: none;
+    text-shadow: 0 0 10px #1d1d1d99;
 }
 
 .skills ol>li {
@@ -149,20 +161,101 @@ p {
 }
 
 .listTitle {
-    font-size: 1.15em;    
+    font-size: 1.15em;
 }
 
 ul li {
     list-style-type: "- ";
 }
+
+/* Contact */
+
+.contact p {
+    font-size: 1.15em;
+    max-width: 700px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+.formcarry-container {
+    display: block;
+    width: 700px;
+    margin-top: 20px;
+}
+
+.formcarry-form label {
+    display: block;
+    font-size: 1.25em;
+    padding: 12px 0 2px 0;
+    text-shadow: 0 0 10px #1d1d1d99;
+}
+
+.formcarry-form input,
+textarea {
+    width: 100%;
+    border-radius: 7px;
+    border-color: transparent;
+    background-color: #99999999;
+    box-shadow: 5px 5px 20px#1d1d1d;
+    color: #11111199;
+    outline: none;
+    text-transform: none;
+    padding: 7px;
+    font-size: 1.1em;
+    transition: border-radius 500ms ease-in-out, background-color 500ms ease-in-out, color 500ms ease-in-out;
+}
+
+.formcarry-form input:focus,
+.formcarry-form textarea:focus {
+    border-radius: 12px;
+    background-color: #d4d1d1;
+    color: #111111;
+}
+
+.formcarry-form button {
+    display: block;
+    padding: 5px 10px;
+    margin: 12px 0 0 0;
+    font-size: 1.2em;
+    border-color: transparent;
+    border-radius: 7px;
+    background-color: #99999999;
+    box-shadow: 5px 5px 20px#1d1d1d;
+}
+
+.formcarry-form button:hover {
+    border-radius: 12px;
+    background-color: #d4d1d1;
+    transition: border-radius 500ms ease-in-out, background-color 500ms ease-in-out;
+}
+
+.formcarry-alert {
+    background-color: black;
+}
+
 @media screen and (max-width: 750px) {
     .about h1 {
         place-self: flex-start;
     }
+
     .projects h1 {
         place-self: flex-start;
     }
+
     .skills h1 {
         place-self: flex-start;
+    }
+
+    .contact h1 {
+        place-self: flex-start;
+    }
+
+    .contact p {
+        text-align: left;
+    }
+
+    .formcarry-container {
+        width: 370px;
     }
 }
