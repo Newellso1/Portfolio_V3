@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to right bottom, #1f1e1e, #3a3535, #2d5334, #2e2a2a, #161616);
+    background-image: linear-gradient(to right bottom, #313030, #4c4747, #2d5334, #2e2a2a, #161616);
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
@@ -43,11 +43,11 @@ body {
 }
 
 h1 {
-    text-shadow: 0 0 10px #1d1d1d99;
+    text-shadow: 0 0 5px #1d1d1d;
 }
 
 p {
-    text-shadow: 0 0 10px #1d1d1d99;
+    text-shadow: 0 0 5px #1d1d1d;
     line-height: 1.5em;
 }
 /* Nav bar */
@@ -63,19 +63,35 @@ p {
     justify-content: center;
     width: 60px;
     height: 60px;
-    background-color: #29312994;
+    background-color: #2d533499;
     border-radius: 10px ;
     box-shadow: 5px 5px 20px#1d1d1d;
     transition: height 300ms ease-in-out;
 }
 
+
+
 .check {
-    opacity: 0;
-    place-self: flex-start;
+    display: flex;
+    text-shadow: 0 0 3px #d8d6d680;
+    place-content: center;
+    place-items: center;
+    font-size: 3em;
+    user-select: none;
     width: 60px;
     height: 60px;
+    padding: 0 0 18px 0;
+    color: #99999999;
+    transition: color 350ms ease-in-out;
 }
 
+.check:hover {
+    color: #d8d6d6;
+}
+
+.checked {
+    color: #d8d6d6;
+}
 .nav-extend {
     height: 280px;
 }
@@ -121,11 +137,13 @@ p {
 .hero h1 {
     font-family: 'Zen Tokyo Zoo';
     font-size: 7em;
+    user-select: none;
 }
 
 .hero p {
     font-size: 2em;
     max-width: 265px;
+    user-select: none;
 }
 
 /* About Page */
@@ -218,7 +236,7 @@ a {
     padding: 10px 30px 30px 30px;
     font-size: 1.15em;
     list-style: none;
-    text-shadow: 0 0 10px #1d1d1d99;
+    text-shadow: 0 0 10px #1d1d1d;
 }
 
 .skills ol>li {
@@ -253,7 +271,7 @@ ul li {
     display: block;
     font-size: 1.25em;
     padding: 12px 0 2px 0;
-    text-shadow: 0 0 10px #1d1d1d99;
+    text-shadow: 0 0 10px #1d1d1d;
 }
 
 .formcarry-form input,
