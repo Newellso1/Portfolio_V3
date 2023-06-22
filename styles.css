@@ -63,7 +63,7 @@ p {
     justify-content: center;
     width: 60px;
     height: 60px;
-    background-color: #2d533499;
+    background-color: #67ff832c;
     border-radius: 10px ;
     box-shadow: 5px 5px 20px#1d1d1d;
     transition: height 300ms ease-in-out;
@@ -73,7 +73,7 @@ p {
 
 .check {
     display: flex;
-    text-shadow: 0 0 3px #d8d6d680;
+    text-shadow: 0 0 2px #d8d6d680;
     place-content: center;
     place-items: center;
     font-size: 3em;
@@ -82,29 +82,41 @@ p {
     height: 60px;
     padding: 0 0 18px 0;
     color: #99999999;
-    transition: color 350ms ease-in-out;
+    transition: color 350ms ease-in-out, text-shadow 350ms ease-in-out;
 }
 
 .check:hover {
     color: #d8d6d6;
+    text-shadow:0 0 10px #d8d6d680;
 }
 
 .checked {
     color: #d8d6d6;
+    text-shadow:0 0 10px #d8d6d680
 }
 .nav-extend {
-    height: 280px;
+    height: 380px;
 }
 
 .nav-bar ul {
     position: fixed;
-    margin-top: 60px;
+    margin-top: 62px;
     display: none;
     transition: display 350ms ease-in-out;
 }
 .nav-top a {
     color: #99999999;
     text-decoration: none;
+}
+
+.nav-top i {
+    color: #99999999;
+    transition: color 350ms ease-in-out;
+    transform: scale(0.75);
+}
+
+.nav-top i:hover {
+    color: #d8d6d6;
 }
 
 .nav-top a:hover {
@@ -116,6 +128,7 @@ p {
     list-style: none;
     font-size: 1em;
     margin-bottom: 20px;
+    user-select: none;
 }
 
 /* 
@@ -269,7 +282,7 @@ ul li {
 
 .formcarry-form label {
     display: block;
-    font-size: 1.25em;
+    font-size: 1.15em;
     padding: 12px 0 2px 0;
     text-shadow: 0 0 10px #1d1d1d;
 }
@@ -317,7 +330,16 @@ textarea {
     background-color: black;
 }
 
-@media screen and (max-width: 750px) {
+
+
+@media screen and (max-width: 400px) {
+    .nav-bar {
+        position: fixed;
+        top: 20px;
+        left: 320px;
+    }
+   
+    
     .about h1 {
         place-self: flex-start;
     }
