@@ -1,5 +1,6 @@
-$(".check").click(function(){
+$(".check").click(function () {
     $(".nav-top").toggleClass("nav-extend");
-    $("#nav-links").toggle("3ms");
-    $(".check").toggleClass("checked")
+    $("#nav-links").toggle("400ms");
+    $(".check").toggleClass("checked");
 });
+

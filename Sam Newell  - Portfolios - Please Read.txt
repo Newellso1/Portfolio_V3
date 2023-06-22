@@ -1,0 +1,6 @@
+ The site in the portfolio folder is this weeks' attempt at a portfolio but below are links to my previous runs.
+
+ In the latest one I can't seem to get the contact form to work correctly and for some reason the images and the audio doesn't load in my XP_Nostalgia soundboard...any advice would be appreciated
+
+ https://newellso1.github.io/Portfolio_v2/
+ https://newellso1.github.io/Portfolio/
