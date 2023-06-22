@@ -95,7 +95,7 @@ p {
     text-shadow:0 0 10px #d8d6d680
 }
 .nav-extend {
-    height: 380px;
+    height: 390px;
 }
 
 .nav-bar ul {
@@ -177,6 +177,7 @@ p {
     margin: 10px 0 0 0;
 }
 
+
 .projects a {
     color: #99999999;
 }
@@ -205,6 +206,10 @@ p {
     box-shadow: 5px 5px 20px#1d1d1d;
     padding: 10px;
     transition: border 600ms ease-in-out, border-radius 500ms ease-in-out;
+}
+
+.project h2 {
+    text-shadow: 0 0 5px #1d1d1d;
 }
 
 .project:hover {
