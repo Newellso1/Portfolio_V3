@@ -75,15 +75,25 @@ p {
     display: flex;
     text-shadow: 0 0 2px #d8d6d680;
     place-content: center;
-    place-items: center;
-    font-size: 3em;
+    position: relative;
+    bottom: 16px;
+    font-size: 50px;
     user-select: none;
     width: 60px;
     height: 60px;
-    padding: 0 0 18px 0;
     color: #99999999;
     transition: color 350ms ease-in-out, text-shadow 350ms ease-in-out;
 }
+
+/* .check span {
+    color: #99999999;
+    transition: color 350ms ease-in-out, text-shadow 350ms ease-in-out;
+}
+
+.check span:hover {
+    color: #d8d6d6;
+    text-shadow:0 0 10px #d8d6d680;
+} */
 
 .check:hover {
     color: #d8d6d6;
