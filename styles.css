@@ -73,27 +73,21 @@ p {
 
 .check {
     display: flex;
-    text-shadow: 0 0 2px #d8d6d680;
-    place-content: center;
+    text-shadow: 0 0 5px #d8d6d680;
+    justify-items: center;
+    align-items: center;
     position: relative;
-    bottom: 16px;
-    font-size: 50px;
+    font-size: 2.5em;
     user-select: none;
     width: 60px;
-    height: 60px;
-    color: #99999999;
+    height: 60px;   
     transition: color 350ms ease-in-out, text-shadow 350ms ease-in-out;
 }
 
-/* .check span {
-    color: #99999999;
-    transition: color 350ms ease-in-out, text-shadow 350ms ease-in-out;
+.check i {
+    transform: scale(0.75);
 }
-
-.check span:hover {
-    color: #d8d6d6;
-    text-shadow:0 0 10px #d8d6d680;
-} */
+ 
 
 .check:hover {
     color: #d8d6d6;
@@ -119,13 +113,18 @@ p {
     text-decoration: none;
 }
 
-.nav-top i {
+#nav-links i {
     color: #99999999;
     transition: color 300ms ease-in-out;
     transform: scale(0.75);
 }
 
-.nav-top i:hover {
+.check i {
+    padding-left: 0.2em;
+}
+
+
+#nav-links i:hover {
     color: #d8d6d6;
 }
 
