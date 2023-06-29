@@ -191,8 +191,8 @@ p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 10px 0 0 0;
-    max-width: 800px;
+    margin: 20px 0 0 0;
+    max-width: 75%;
 }
 
 .project {
@@ -344,6 +344,10 @@ textarea {
 
     .projects h1 {
         place-self: flex-start;
+    }
+
+    .projectContainer {
+        max-width: 95%;
     }
 
     .skills h1 {
