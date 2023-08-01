@@ -239,7 +239,23 @@ a {
     line-height: 1.25em;
 }
 
+/* Bootstraps */
 
+.bootstrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.bootstrapContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0 0 0;
+    max-width: 50%;
+}
 
 /* Skills */
 
