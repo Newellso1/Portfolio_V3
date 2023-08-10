@@ -374,6 +374,10 @@ textarea {
         place-self: flex-start;
     }
 
+    .bootstrapContainer {
+        max-width: 95%;
+    }
+
     .contact h1 {
         place-self: flex-start;
     }
